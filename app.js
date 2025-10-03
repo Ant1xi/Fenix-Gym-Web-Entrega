@@ -566,3 +566,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateDots(); startAutoplay(); scrollToSlide(0);
 });
+
+// ===== Marquee LOOP infinito sin deriva =====
+(() => {
+  const marquee = document.querySelector('.marquee.marquee--loop');
+  if (!marquee) return;
+
+  const viewport = marquee.querySelector('.marquee__viewport');
+  const inner    = marquee.querySelector('.marquee__inner');
+  const track    = marquee.querySelector('.marquee__track');
+
+  // px/seg deseados (ajusta a tu gusto)
+  const PX_PER_SECOND = 70;
+
+  function buildLoop() {
+    // Limpia clones previos
+    [...inner.querySelectorAll('.marquee__track[aria-hidden="true"]')].forEach(n => n.remove());
+
+    // Ancho de una pista (sin transform)
+    const prev = inner.style.transform;
+    inner.style.transform = 'none';
+    const trackW = track.scrollWidth;
+    const viewW  = viewport.clientWidth;
+    inner.style.transform = prev;
+
+    // Duplica la pista las veces necesarias para cubrir viewport + una extra (para el loop)
+    while (inner.scrollWidth < viewW + trackW) {
+      const clone = track.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      inner.appendChild(clone);
+    }
+
+    // Define distancia exacta de animación (ancho de UNA pista)
+    inner.style.setProperty('--track-w', trackW + 'px');
+
+    // Velocidad según distancia (para que el ritmo sea constante)
+    const speed = Math.max(8, Math.min(60, trackW / PX_PER_SECOND));
+    inner.style.setProperty('--marquee-speed', speed + 's');
+
+    // Si todo cabe en viewport, desactiva animación
+    if (trackW <= viewW) {
+      inner.style.animation = 'none';
+      // Centrado estático
+      inner.style.justifyContent = 'center';
+    } else {
+      inner.style.animation = '';              // usa la @keyframes
+      inner.style.justifyContent = '';
+    }
+  }
+
+  // Recalcula en resize y al cargar
+  const ro = new ResizeObserver(buildLoop);
+  ro.observe(viewport);
+  ro.observe(track);
+  window.addEventListener('load', buildLoop);
+})();
