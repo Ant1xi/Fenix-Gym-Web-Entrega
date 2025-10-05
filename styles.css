@@ -478,3 +478,17 @@ margin:.9rem auto clamp(1.2rem, 2.6vw, 2rem);
 /* FAQ centrado y ancho controlado */
 .accordion{ max-width:min(820px,94vw); margin-inline:auto; display:grid; gap:.8rem }
 .accordion__item summary{ padding:.6rem 0; cursor:pointer }
+
+/* Logo con fondo blanco circular */
+.brand__logo{
+  width:30px; height:30px;
+  background:#fff;             /* círculo blanco */
+  border-radius:50%;
+  padding:4px;                 /* borde blanco alrededor del logo */
+  object-fit:contain;          /* que entre completo */
+  box-shadow:0 2px 10px rgba(0,0,0,.25);
+  display:block;
+}
+
+/* Si lo quieres totalmente circular: */
+.brand__logo{ border-radius:50%; }
