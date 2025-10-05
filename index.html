@@ -2,81 +2,73 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="color-scheme" content="dark light">
-    <meta name="theme-color" content="#00bfff"
-      media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b1220"
-      media="(prefers-color-scheme: dark)">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#00bfff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+
     <title>Fénix Gym Bormujos | Entrena sin límites</title>
 
     <!-- SEO -->
-    <meta name="description"
-      content="Fénix Gym Bormujos: tu gimnasio en Sevilla sin matrícula ni permanencia. Clases dirigidas, cardio, musculación, box y zona funcional." />
-    <meta name="keywords"
-      content="gimnasio, Bormujos, Fenix Gym, fitness, sin matrícula, clases dirigidas, Sevilla">
-    <meta name="author" content="Fénix Gym Bormujos">
-    <link rel="canonical" href="https://fenixgymbormujos.es/">
+    <meta name="description" content="Fénix Gym Bormujos: tu gimnasio en Sevilla sin matrícula ni permanencia. Clases dirigidas, cardio, musculación, box y zona funcional." />
+    <meta name="keywords" content="gimnasio, Bormujos, Fenix Gym, fitness, sin matrícula, clases dirigidas, Sevilla" />
+    <meta name="author" content="Fénix Gym Bormujos" />
+    <link rel="canonical" href="https://fenixgymbormujos.es/" />
 
     <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fénix Gym Bormujos | Entrena sin límites" />
+    <meta property="og:description" content="Musculación, cardio y clases dirigidas. Sin matrícula ni permanencia en Bormujos (Sevilla)." />
+    <meta property="og:image" content="/images/og-cover.jpg" />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:title"
-      content="Fénix Gym Bormujos | Entrena sin límites">
-    <meta property="og:description"
-      content="Musculación, cardio y clases dirigidas. Sin matrícula ni permanencia en Bormujos (Sevilla).">
-    <meta property="og:image" content="/images/og-cover.jpg">
-    <meta property="og:locale" content="es_ES">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Tipografía -->
-    <link rel="icon" href="images/LogoPNG.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet">
+    <!-- Favicon & font -->
+    <link rel="icon" href="images/LogoPNG.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- Estilos -->
-
-    <link rel="stylesheet" href="styles.css?v=ed987f0">
+    <link rel="stylesheet" href="styles.css?v=ed987f0" />
 
     <!-- JSON‑LD (ajusta datos reales) -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HealthClub",
-    "name": "Fénix Gym Bormujos",
-    "url": "https://fenixgymbormujos.es/",
-    "telephone": "+34 614 26 65 99",
-    "address": {"@type":"PostalAddress","addressLocality":"Bormujos","addressRegion":"Sevilla","addressCountry":"ES"},
-    "amenityFeature": [
-      {"@type":"LocationFeatureSpecification","name":"Sala de musculación"},
-      {"@type":"LocationFeatureSpecification","name":"Cardio"},
-      {"@type":"LocationFeatureSpecification","name":"Clases dirigidas"},
-      {"@type":"LocationFeatureSpecification","name":"Zona funcional"}
-    ]
-  }
-  </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "HealthClub",
+        "name": "Fénix Gym Bormujos",
+        "url": "https://fenixgymbormujos.es/",
+        "telephone": "+34 614 26 65 99",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bormujos",
+          "addressRegion": "Sevilla",
+          "addressCountry": "ES"
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Sala de musculación" },
+          { "@type": "LocationFeatureSpecification", "name": "Cardio" },
+          { "@type": "LocationFeatureSpecification", "name": "Clases dirigidas" },
+          { "@type": "LocationFeatureSpecification", "name": "Zona funcional" }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Barra progreso -->
-    <div class="progress" aria-hidden="true"><span
-        class="progress__bar"></span></div>
+    <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
 
     <!-- Header -->
     <header class="header" data-sticky>
       <div class="container nav">
         <a href="#inicio" class="brand" aria-label="Ir al inicio">
-          <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true"
-            focusable="false">
+          <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
             <defs>
-              <lineargradient id="g1" x1="0" x2="1">
+              <linearGradient id="g1" x1="0" x2="1">
                 <stop offset="0%" stop-color="#3aa6ff" />
                 <stop offset="100%" stop-color="#7c4dff" />
-              </lineargradient>
+              </linearGradient>
             </defs>
             <circle cx="32" cy="32" r="28" fill="url(#g1)" />
             <path d="M20 38 L32 16 L44 38 Z" class="brand__mark" />
@@ -85,27 +77,22 @@
         </a>
 
         <nav aria-label="Principal" class="nav__wrap">
-          <button class="nav__toggle" aria-expanded="false"
-            aria-controls="menu">☰</button>
+          <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
           <ul id="menu" class="menu">
             <li><a class="menu__link" href="#inicio">Inicio</a></li>
             <li><a class="menu__link" href="#clases">Clases</a></li>
             <li><a class="menu__link" href="#horario">Horario</a></li>
             <li><a class="menu__link" href="#entrenadores">Entrenadores</a></li>
-            <li><a class="menu__link"
-                href="#instalaciones">Instalaciones</a></li>
+            <li><a class="menu__link" href="#instalaciones">Instalaciones</a></li>
             <li><a class="menu__link" href="#precios">Precios</a></li>
             <li><a class="menu__link" href="#contacto">Contacto</a></li>
             <li>
-              <button class="theme-toggle" id="themeToggle"
-                aria-label="Cambiar tema">
+              <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
                 <span class="theme-toggle__sun" aria-hidden="true">☀️</span>
                 <span class="theme-toggle__moon" aria-hidden="true">🌙</span>
               </button>
             </li>
-            <li class="menu__cta"><a class="btn btn--primary"
-                href="https://wa.me/34614266599" target="_blank"
-                rel="noopener">WhatsApp</a></li>
+            <li class="menu__cta"><a class="btn btn--primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a></li>
           </ul>
         </nav>
       </div>
@@ -113,9 +100,7 @@
 
     <main id="contenido">
       <!-- HERO -->
-      <section id="inicio" class="section hero hero--image"
-        aria-label="Inicio Fénix Gym"
-        style="--hero-bg:url('images/instalaciones.jpg')">
+      <section id="inicio" class="section hero hero--image" aria-label="Inicio Fénix Gym" style="--hero-bg:url('images/instalaciones.jpg')">
         <div class="hero__overlay" aria-hidden="true"></div>
 
         <div class="container hero__grid">
@@ -124,14 +109,11 @@
             <p class="eyebrow">Bormujos · Sin matrícula · Sin permanencia</p>
 
             <h1 class="headline gradient-text">
-              Entrena sin límites, <span class="underline">mejora cada
-                día</span>.
+              Entrena sin límites, <span class="underline">mejora cada día</span>.
             </h1>
 
             <p class="subhead">
-              Sala de musculación, cardio, box, zona funcional y clases
-              dirigidas.
-              Abierto todo el año con ambiente de familia y resultados reales.
+              Sala de musculación, cardio, box, zona funcional y clases dirigidas. Abierto todo el año con ambiente de familia y resultados reales.
             </p>
 
             <ul class="hero__bullets" role="list">
@@ -148,11 +130,7 @@
 
           <!-- Logo a la derecha -->
           <div class="hero__media">
-            <img src="images/LogoPNG.png"
-              alt="Logotipo Fénix Gym"
-              class="hero__logo-large"
-              width="300" height="300"
-              loading="eager" decoding="async">
+            <img src="images/LogoPNG.png" alt="Logotipo Fénix Gym" class="hero__logo-large" width="300" height="300" loading="eager" decoding="async" />
           </div>
         </div>
 
@@ -162,717 +140,584 @@
             <div class="marquee__viewport">
               <div class="marquee__inner">
                 <ul class="marquee__track" id="marqueeItems">
-                  <li>Musculación</li><li>Cardio</li><li>Box</li><li>Funcional</li>
-                  <li>HIIT</li><li>Zumba</li><li>GAP</li><li>Estiramientos</li>
-                  <li>Cross</li><li>Core</li>
+                  <li>Musculación</li>
+                  <li>Cardio</li>
+                  <li>Box</li>
+                  <li>Funcional</li>
+                  <li>HIIT</li>
+                  <li>Zumba</li>
+                  <li>GAP</li>
+                  <li>Estiramientos</li>
+                  <li>Cross</li>
+                  <li>Core</li>
                 </ul>
                 <!-- JS duplicará esta pista las veces necesarias para un loop perfecto -->
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /HERO -->
 
-        <!-- BENEFICIOS RÁPIDOS -->
-        <section class="section section--alt">
-          <div class="container features">
-            <article class="feature reveal"><div class="feature__icon"
-                aria-hidden="true">💳</div><h3>Sin matrícula</h3><p>Apúntate
-                hoy,
-                entrena hoy. Cero costes de alta.</p></article>
-            <article class="feature reveal"><div class="feature__icon"
-                aria-hidden="true">🧼</div><h3>Higiene</h3><p>Espacios
-                ventilados
-                y limpieza constante.</p></article>
-            <article class="feature reveal"><div class="feature__icon"
-                aria-hidden="true">🏋️</div><h3>Equipo Pro</h3><p>Instalaciones
-                de
-                entrenamiento completas</p></article>
-            <article class="feature reveal"><div class="feature__icon"
-                aria-hidden="true">👥</div><h3>Staff cercano</h3><p>Ayuda real,
-                cero postureo.</p></article>
-            <article class="feature reveal"><div class="feature__icon"
-                aria-hidden="true">🕒</div><h3>Horario amplio</h3><p>Entrena
-                cuando te venga bien.</p></article>
-          </div>
-        </section>
-
-        <!-- CLASES -->
-        <section id="clases" class="section">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Clases dirigidas</h2>
-              <p class="muted">Energía en grupo, resultados individuales.</p>
-            </header>
-
-            <div class="cards cards--grid">
-              <!-- Zumba -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/zumba.jpg';"
-                    alt="Clase de Zumba en grupo">
-                </div>
-                <div class="card__body">
-                  <h3>Zumba</h3>
-                  <p>Quema calorías bailando. Diversión asegurada.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Pilates -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/pilates.jpg';"
-                    alt="Clase de Pilates con colchonetas">
-                </div>
-                <div class="card__body">
-                  <h3>Pilates</h3>
-                  <p>Fuerza, control postural y movilidad.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Spinning Virtual -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/spinning.jpg';"
-                    alt="Clase de Spinning Virtual en bicicletas">
-                </div>
-                <div class="card__body">
-                  <h3>Spinning Virtual</h3>
-                  <p>Cardio potente con sesiones guiadas en pantalla.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Estiramientos -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/estiramientos.jpg';"
-                    alt="Clase de estiramientos y movilidad">
-                </div>
-                <div class="card__body">
-                  <h3>Estiramientos</h3>
-                  <p>Recupera, mejora tu movilidad y previene lesiones.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Power -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1517963628607-235ccdd5476b?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/power.jpg';"
-                    alt="Clase Power con barra y discos">
-                </div>
-                <div class="card__body">
-                  <h3>Power</h3>
-                  <p>Fuerza y resistencia con barra, discos y música.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- GAP -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1583454110551-21f2fa2f81c6?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/gap.jpg';"
-                    alt="Clase de GAP: glúteos, abdomen y piernas">
-                </div>
-                <div class="card__body">
-                  <h3>GAP</h3>
-                  <p>Glúteos, abdomen y piernas a fuego.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Boxing -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/boxing.jpg';"
-                    alt="Clase de Boxing con sacos y guantes">
-                </div>
-                <div class="card__body">
-                  <h3>Boxing</h3>
-                  <p>Mejora tu condición con técnica y golpes al saco.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Bachata -->
-              <article class="card card--class reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=1200&auto=format&fit=crop"
-                    onerror="this.onerror=null; this.src='images/classes/bachata.jpg';"
-                    alt="Clase de Bachata en pareja">
-                </div>
-                <div class="card__body">
-                  <h3>Bachata</h3>
-                  <p>Aprende pasos y ritmos latinos para divertirte.</p>
-                  <div class="card__footer">
-                    <a class="btn btn--ghost" href="#horario">Ver horario</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="horario" class="section">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Horarios</h2>
-              <p class="muted">Consulta apertura del gimnasio y clases
-                colectivas.</p>
-            </header>
-
-            <div class="schedule-grid">
-              <!-- Tarjeta 1/3 — Horario semanal de apertura -->
-              <article class="card hours-card reveal"
-                aria-labelledby="hours-title">
-                <div class="card__body">
-                  <h3 id="hours-title">Horario semanal</h3>
-                  <ul class="hours-list" role="list">
-                    <li><strong>Lunes a viernes:</strong> 07:30 – 22:30</li>
-                    <li><strong>Sábados:</strong> 09:30 – 13:30</li>
-                    <li><strong>Domingos:</strong> Cerrado</li>
-                  </ul>
-                  <p class="muted" style="margin-top:.5rem">
-                    * Festivos según tablón y RRSS.
-                  </p>
-                </div>
-              </article>
-
-              <!-- Tarjeta 2/3 — Horario de clases (imagen) -->
-              <figure class="card schedule-card reveal">
-                <img src="images/HorarioClases.png"
-                  alt="Horario semanal de clases colectivas de Fénix Gym">
-                <figcaption class="muted">
-                  Mínimo 5 personas por clase. Actualizado mensualmente.
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </section>
-
-        <!-- ENTRENADORES -->
-        <section id="entrenadores" class="section">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Equipo Fénix</h2>
-              <p class="muted">Entrenadores cualificados y cercanos, siempre
-                dispuestos a ayudarte.</p>
-            </header>
-
-            <div class="cards">
-              <!-- Ana -->
-              <article class="card reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="images/monitoraAna.png"
-                    alt="Ana, instructora de clases dirigidas en Fénix Gym">
-                </div>
-                <div class="card__body">
-                  <h3>Ana — Clases dirigidas</h3>
-                  <p>Imparte Zumba, Pilates, Spinning, GAP, Power y más. Energía
-                    positiva en cada sesión.</p>
-                  <button class="btn btn--ghost"
-                    data-open-modal="#modal-ana">Ver
-                    perfil</button>
-                </div>
-              </article>
-
-              <!-- Miguel -->
-              <article class="card reveal">
-                <div class="card__media">
-                  <img loading="lazy"
-                    src="images/monitorMiguel.png"
-                    alt="Miguel, monitor de sala y GAP en Fénix Gym">
-                </div>
-                <div class="card__body">
-                  <h3>Miguel — GAP & Sala</h3>
-                  <p>Monitor de sala y especialista en GAP. Muy cualificado,
-                    siempre apoya y motiva a cada socio.</p>
-                  <button class="btn btn--ghost"
-                    data-open-modal="#modal-miguel">Ver perfil</button>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- Modales de entrenadores -->
-        <dialog id="modal-ana" class="modal">
-          <article class="modal__card">
-            <header class="modal__header">
-              <h3>Ana — Clases dirigidas</h3>
-              <button class="modal__close" aria-label="Cerrar"
-                data-close-modal>✕</button>
-            </header>
-            <div class="modal__content">
-              <p>Ana es la encargada de la mayoría de las clases colectivas. Con
-                su energía y cercanía consigue que
-                cada alumno disfrute, se motive y supere sus límites.</p>
-            </div>
-            <footer class="modal__footer">
-              <button class="btn btn--outline" data-close-modal>Cerrar</button>
-              <a class="btn btn--primary" href="#contacto">Quiero entrenar con
-                Ana</a>
-            </footer>
+      <!-- BENEFICIOS RÁPIDOS -->
+      <section class="section section--alt" aria-label="Beneficios">
+        <div class="container features">
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">💳</div>
+            <h3>Sin matrícula</h3>
+            <p>Apúntate hoy, entrena hoy. Cero costes de alta.</p>
           </article>
-        </dialog>
-
-        <dialog id="modal-miguel" class="modal">
-          <article class="modal__card">
-            <header class="modal__header">
-              <h3>Miguel — GAP & Sala</h3>
-              <button class="modal__close" aria-label="Cerrar"
-                data-close-modal>✕</button>
-            </header>
-            <div class="modal__content">
-              <p>Miguel es monitor de sala y de GAP. Muy cualificado y cercano,
-                se
-                asegura de que cada persona entrene
-                con seguridad, buena técnica y confianza.</p>
-            </div>
-            <footer class="modal__footer">
-              <button class="btn btn--outline" data-close-modal>Cerrar</button>
-              <a class="btn btn--primary" href="#contacto">Entrenar con
-                Miguel</a>
-            </footer>
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">🧼</div>
+            <h3>Higiene</h3>
+            <p>Espacios ventilados y limpieza constante.</p>
           </article>
-        </dialog>
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">🏋️</div>
+            <h3>Equipo Pro</h3>
+            <p>Instalaciones de entrenamiento completas</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">👥</div>
+            <h3>Staff cercano</h3>
+            <p>Ayuda real, cero postureo.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">🕒</div>
+            <h3>Horario amplio</h3>
+            <p>Entrena cuando te venga bien.</p>
+          </article>
+        </div>
+      </section>
 
-        <!-- Instalaciones / Galería -->
-        <section id="instalaciones" class="section section--alt">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Instalaciones</h2>
-              <p class="muted">Sala de pesas, zona funcional, box, cardio y
-                estiramientos.</p>
-            </header>
+      <!-- CLASES -->
+      <section id="clases" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Clases dirigidas</h2>
+          </header>
+          <p class="subhead">Energía en grupo, resultados individuales.</p>
 
-            <div class="gallery" aria-label="Galería de instalaciones">
-              <figure class="gallery__item reveal">
-                <img loading="lazy" src="images/instalaciones1.png"
-                  alt="Sala de musculación">
-              </figure>
-              <figure class="gallery__item reveal">
-                <img loading="lazy" src="images/instalaciones2.png"
-                  alt="Zona de cardio">
-              </figure>
-              <figure class="gallery__item reveal">
-                <img loading="lazy" src="images/instalaciones3.png"
-                  alt="Zona funcional">
-              </figure>
-              <figure class="gallery__item reveal">
-                <img loading="lazy" src="images/instalaciones4.png"
-                  alt="Box y sacos">
-              </figure>
-              <figure class="gallery__item reveal">
-                <img loading="lazy" src="images/instalaciones5.png"
-                  alt="Área de estiramientos">
-              </figure>
-              <figure class="gallery__item reveal">
-                <img loading="lazy" src="images/instalaciones6.png"
-                  alt="Sala de clases colectivas">
-              </figure>
-            </div>
-          </div>
-        </section>
-
-        <!-- Testimonios -->
-        <section id="opiniones" class="section">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Resultados reales</h2>
-              <p class="muted">Opiniones de Google · Fénix Gym</p>
-            </header>
-
-            <div class="reviews" aria-roledescription="carrusel">
-              <button class="reviews__btn reviews__btn--prev"
-                aria-label="Anterior">‹</button>
-
-              <ul class="reviews__track" role="list">
-                <!-- Cada item es una captura de una reseña -->
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r1.png"
-                      alt="Reseña de Google 1 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r2.png"
-                      alt="Reseña de Google 2 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r3.png"
-                      alt="Reseña de Google 3 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r4.png"
-                      alt="Reseña de Google 4 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r5.png"
-                      alt="Reseña de Google 5 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r6.png"
-                      alt="Reseña de Google 6 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r7.png"
-                      alt="Reseña de Google 8 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r8.png"
-                      alt="Reseña de Google 8 sobre Fénix Gym">
-                  </figure>
-                </li>
-                <li class="reviews__slide">
-                  <figure class="reviews__figure">
-                    <img src="images/reviews/r9.png"
-                      alt="Reseña de Google 9 sobre Fénix Gym">
-                  </figure>
-                </li>
-              </ul>
-
-              <button class="reviews__btn reviews__btn--next"
-                aria-label="Siguiente">›</button>
-
-              <div class="reviews__dots" aria-label="Indicadores"></div>
-
-              <p class="muted center" style="margin-top:.8rem">
-                Fuente: <a
-                  href="https://www.google.com/search?q=F%C3%A9nix%20Gym%20Rese%C3%B1as#lkt=LocalPoiReviews"
-                  target="_blank" rel="noopener">Google Reviews</a>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- PRECIOS / PLANES -->
-        <section id="precios" class="section">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Planes sin letra pequeña</h2>
-              <p class="muted">Elige tu plan y empieza hoy.</p>
-            </header>
-
-            <div class="pricing">
-              <!-- DESTACADO 1: Día gratis -->
-              <article class="price price--highlight reveal">
-                <div class="badge badge--accent">¡Prueba gratis!</div>
-                <h3>Prueba tu 1er día GRATIS</h3>
-                <p class="price__num"><sup>€</sup>GRATIS<span>/día</span></p>
-                <ul class="price__list">
-                  <li>Si nunca te has apuntado, ven a probar sin coste.</li>
-                </ul>
-                <a href="#contacto" class="btn btn--primary">Quiero mi día
-                  gratis</a>
-              </article>
-
-              <!-- Day Pass -->
-              <article class="price reveal">
-                <h3>Day Pass</h3>
-                <p class="price__num"><sup>€</sup>3<span>/día</span></p>
-                <ul class="price__list">
-                  <li>Acceso total 1 día</li><li>Acceso a clases</li><li>Sin
-                    matrícula</li>
-                </ul>
-                <a href="#contacto" class="btn btn--outline">Lo quiero</a>
-              </article>
-
-              <!-- DESTACADO 2: Mensual -->
-              <article class="price price--featured reveal">
-                <div class="badge">Más popular</div>
-                <h3>Mensual</h3>
-                <p class="price__num"><sup>€</sup>35<span>/mes</span></p>
-                <ul class="price__list">
-                  <li>Acceso ilimitado</li><li>Todas las clases</li><li>Sin
-                    permanencia</li>
-                </ul>
-                <a href="#contacto" class="btn btn--primary">Apuntarme</a>
-              </article>
-
-              <!-- Bimestral -->
-              <article class="price reveal">
-                <h3>Bimestral</h3>
-                <p class="price__num"><sup>€</sup>60<span>/2 meses</span></p>
-                <p class="saving">≈ 30 €/mes · <strong>~14% ahorro</strong></p>
-                <ul class="price__list">
-                  <li>Locker incluido</li><li>Invita a 1 amigo/mes</li>
-                </ul>
-                <a href="#contacto" class="btn btn--outline">Lo quiero</a>
-              </article>
-
-              <!-- Trimestral -->
-              <article class="price reveal">
-                <h3>Trimestral</h3>
-                <p class="price__num"><sup>€</sup>90<span>/3 meses</span></p>
-                <p class="saving">≈ 30 €/mes · <strong>~14% ahorro</strong></p>
-                <ul class="price__list">
-                  <li>Locker incluido</li><li>Invita a 1 amigo/mes</li>
-                </ul>
-                <a href="#contacto" class="btn btn--outline">Lo quiero</a>
-              </article>
-
-              <!-- Anual -->
-              <article class="price reveal">
-                <h3>Anual</h3>
-                <p class="price__num"><sup>€</sup>336<span>/12 meses</span></p>
-                <p class="saving">≈ 28 €/mes · <strong>~20% ahorro</strong></p>
-                <ul class="price__list">
-                  <li>Locker incluido</li><li>Invita a 1 amigo/mes</li>
-                </ul>
-                <a href="#contacto" class="btn btn--outline">Lo quiero</a>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- CTA Redes Sociales -->
-        <section class="section section--cta">
-          <div class="container cta-final">
-            <h2 class="h2 gradient-text">Lleva Fénix Gym en tu bolsillo</h2>
-            <p class="muted">Estate al tanto de novedades, horarios y el
-              ambiente
-              del gym en nuestras redes sociales.</p>
-            <div class="cta" style="justify-content:center">
-              <a href="https://www.instagram.com/fenixgymbormujos/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn--primary btn--xl btn--instagram">
-                Síguenos en Instagram
-              </a>
-              <a href="#faq" class="btn btn--ghost btn--xl">Preguntas
-                frecuentes</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="section section--alt">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">FAQ</h2>
-              <p class="muted">Todo claro antes de empezar.</p>
-            </header>
-
-            <div class="accordion" role="tablist">
-              <details class="accordion__item reveal">
-                <summary role="tab" aria-controls="f1">¿Hay matrícula o
-                  permanencia?</summary>
-                <div id="f1" role="tabpanel"><p>No. Puedes darte de alta y baja
-                    cuando quieras.</p></div>
-              </details>
-              <details class="accordion__item reveal">
-                <summary role="tab" aria-controls="f2">¿Las clases van
-                  incluidas?</summary>
-                <div id="f2" role="tabpanel"><p>Sí, según aforo y plan
-                    contratado.</p></div>
-              </details>
-              <details class="accordion__item reveal">
-                <summary role="tab" aria-controls="f3">¿Puedo probar un
-                  día?</summary>
-                <div id="f3" role="tabpanel"><p>Sí, con nuestro Day Pass de
-                    5€.</p></div>
-              </details>
-            </div>
-          </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" class="section">
-          <div class="container">
-            <header class="section__header">
-              <h2 class="h2">Contacta</h2>
-              <p class="muted">Te respondemos rápido. <strong>Tel/WhatsApp: <a
-                    href="tel:+34614266599">+34 614 26 65 99</a></strong></p>
-            </header>
-
-            <form class="form reveal" data-validate>
-              <div class="form__row">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text"
-                  placeholder="Tu nombre" required>
+          <div class="cards">
+            <!-- Zumba -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/zumba.jpg';" alt="Clase de Zumba en grupo" />
               </div>
-              <div class="form__row">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email"
-                  placeholder="tucorreo@dominio.com" required>
+              <div class="card__body">
+                <h3>Zumba</h3>
+                <p>Quema calorías bailando. Diversión asegurada.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
               </div>
-              <div class="form__row">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5"
-                  placeholder="Cuéntanos tu objetivo: perder peso, ganar masa, etc."
-                  required></textarea>
-              </div>
-              <div class="form__actions">
-                <button class="btn btn--primary" type="submit">Enviar</button>
-                <p class="form__status" role="status" aria-live="polite"></p>
-              </div>
-            </form>
+            </article>
 
-            <!-- Mapa -->
-            <div class="card glass reveal"
-              style="margin-top:1rem;padding:0;overflow:hidden;">
-              <iframe title="Mapa Fénix Gym Bormujos"
-                style="width:100%;height:360px;border:0" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.6996672746478!2d-6.069626285721335!3d37.37344994445832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd121334e6e6ee75%3A0xab0a2192627ec53!2sF%C3%A9nix%20Gym!5e0!3m2!1ses!2sus!4v1759388415930!5m2!1ses!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </section>
-      </main>
+            <!-- Pilates -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/pilates.jpg';" alt="Clase de Pilates con colchonetas" />
+              </div>
+              <div class="card__body">
+                <h3>Pilates</h3>
+                <p>Fuerza, control postural y movilidad.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
 
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div class="container footer__grid">
-          <div class="footer__col">
-            <a class="brand brand--sm" href="#inicio">FÉNIX GYM</a>
-            <p class="muted">Tu gimnasio de confianza en Bormujos. Sin matrícula
-              ni permanencia.</p>
-          </div>
-          <nav class="footer__col" aria-label="Legal">
-            <h4>Legal</h4>
-            <ul><li><a href="#">Privacidad</a></li><li><a
-                  href="#">Términos</a></li><li><a
-                  href="#">Cookies</a></li></ul>
-          </nav>
-          <nav class="footer__col" aria-label="Navegación">
-            <h4>Mapa</h4>
-            <ul>
-              <li><a href="#clases">Clases</a></li>
-              <li><a href="#horario">Horario</a></li>
-              <li><a href="#precios">Precios</a></li>
-              <li><a href="#instalaciones">Instalaciones</a></li>
-            </ul>
-          </nav>
-          <div class="footer__col">
-            <h4>Newsletter</h4>
-            <form class="newsletter" data-validate>
-              <input type="email" name="news" placeholder="Tu email" required
-                aria-label="Email para newsletter">
-              <button class="btn btn--outline"
-                type="submit">Suscribirme</button>
-              <p class="form__status" role="status" aria-live="polite"></p>
-            </form>
+            <!-- Spinning Virtual -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/spinning.jpg';" alt="Clase de Spinning Virtual en bicicletas" />
+              </div>
+              <div class="card__body">
+                <h3>Spinning Virtual</h3>
+                <p>Cardio potente con sesiones guiadas en pantalla.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
+
+            <!-- Estiramientos -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/estiramientos.jpg';" alt="Clase de estiramientos y movilidad" />
+              </div>
+              <div class="card__body">
+                <h3>Estiramientos</h3>
+                <p>Recupera, mejora tu movilidad y previene lesiones.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
+
+            <!-- Power -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517963628607-235ccdd5476b?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/power.jpg';" alt="Clase Power con barra y discos" />
+              </div>
+              <div class="card__body">
+                <h3>Power</h3>
+                <p>Fuerza y resistencia con barra, discos y música.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
+
+            <!-- GAP -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1583454110551-21f2fa2f81c6?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/gap.jpg';" alt="Clase de GAP: glúteos, abdomen y piernas" />
+              </div>
+              <div class="card__body">
+                <h3>GAP</h3>
+                <p>Glúteos, abdomen y piernas a fuego.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
+
+            <!-- Boxing -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/boxing.jpg';" alt="Clase de Boxing con sacos y guantes" />
+              </div>
+              <div class="card__body">
+                <h3>Boxing</h3>
+                <p>Mejora tu condición con técnica y golpes al saco.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
+
+            <!-- Bachata -->
+            <article class="card card--class reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null; this.src='images/classes/bachata.jpg';" alt="Clase de Bachata en pareja" />
+              </div>
+              <div class="card__body">
+                <h3>Bachata</h3>
+                <p>Aprende pasos y ritmos latinos para divertirte.</p>
+                <div class="card__footer"><a class="btn btn--ghost" href="#horario">Ver horario</a></div>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="container footer__bottom">
-          <small>© <span id="year"></span> Fénix Gym Bormujos. Todos los
-            derechos
-            reservados.</small>
-          <a class="back-to-top" href="#inicio">↑ Volver arriba</a>
+      <!-- HORARIOS -->
+      <section id="horario" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Horarios</h2>
+          </header>
+          <p class="subhead">Consulta apertura del gimnasio y clases colectivas.</p>
+
+          <div class="schedule-grid">
+            <!-- Tarjeta 1/3 — Horario semanal de apertura -->
+            <article class="card hours-card reveal" aria-labelledby="hours-title">
+              <div class="card__body">
+                <h3 id="hours-title">Horario semanal</h3>
+                <ul class="hours-list" role="list">
+                  <li><strong>Lunes a viernes:</strong> 07:30 – 22:30</li>
+                  <li><strong>Sábados:</strong> 09:30 – 13:30</li>
+                  <li><strong>Domingos:</strong> Cerrado</li>
+                </ul>
+                <p class="muted" style="margin-top:.5rem">* Festivos según tablón y RRSS.</p>
+              </div>
+            </article>
+
+            <!-- Tarjeta 2/3 — Horario de clases (imagen) -->
+            <figure class="card schedule-card reveal">
+              <img src="images/HorarioClases.png" alt="Horario semanal de clases colectivas de Fénix Gym" loading="lazy" decoding="async" />
+              <figcaption class="muted">Mínimo 5 personas por clase. Actualizado mensualmente.</figcaption>
+            </figure>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- ENTRENADORES -->
+      <section id="entrenadores" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Equipo Fénix</h2>
+          </header>
+          <p class="subhead">Entrenadores cualificados y cercanos, siempre dispuestos a ayudarte.</p>
+
+          <div class="cards">
+            <!-- Ana -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="images/monitoraAna.png" alt="Ana, instructora de clases dirigidas en Fénix Gym" />
+              </div>
+              <div class="card__body">
+                <h3>Ana — Clases dirigidas</h3>
+                <p>Imparte Zumba, Pilates, Spinning, GAP, Power y más. Energía positiva en cada sesión.</p>
+                <button class="btn btn--ghost" data-open-modal="#modal-ana">Ver perfil</button>
+              </div>
+            </article>
+
+            <!-- Miguel -->
+            <article class="card reveal">
+              <div class="card__media">
+                <img loading="lazy" decoding="async" src="images/monitorMiguel.png" alt="Miguel, monitor de sala y GAP en Fénix Gym" />
+              </div>
+              <div class="card__body">
+                <h3>Miguel — GAP & Sala</h3>
+                <p>Monitor de sala y especialista en GAP. Muy cualificado, siempre apoya y motiva a cada socio.</p>
+                <button class="btn btn--ghost" data-open-modal="#modal-miguel">Ver perfil</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <!-- Modales de entrenadores -->
-      <dialog id="modal-lucia" class="modal">
+      <dialog id="modal-ana" class="modal">
         <article class="modal__card">
           <header class="modal__header">
-            <h3>Lucía — Fuerza & Técnica</h3><button class="modal__close"
-              aria-label="Cerrar" data-close-modal>✕</button>
+            <h3>Ana — Clases dirigidas</h3>
+            <button class="modal__close" aria-label="Cerrar" data-close-modal>✕</button>
           </header>
           <div class="modal__content">
-            <p>Especialista en fuerza y técnica de levantamientos. Planes
-              personalizados y mejora postural.</p>
+            <p>Ana es la encargada de la mayoría de las clases colectivas. Con su energía y cercanía consigue que cada alumno disfrute, se motive y supere sus límites.</p>
           </div>
           <footer class="modal__footer">
             <button class="btn btn--outline" data-close-modal>Cerrar</button>
-            <a class="btn btn--primary" href="#contacto">Quiero entrenar con
-              Lucía</a>
+            <a class="btn btn--primary" href="#contacto">Quiero entrenar con Ana</a>
           </footer>
         </article>
       </dialog>
 
-      <dialog id="modal-marcos" class="modal">
+      <dialog id="modal-miguel" class="modal">
         <article class="modal__card">
           <header class="modal__header">
-            <h3>Marcos — HIIT & Box</h3><button class="modal__close"
-              aria-label="Cerrar" data-close-modal>✕</button>
+            <h3>Miguel — GAP & Sala</h3>
+            <button class="modal__close" aria-label="Cerrar" data-close-modal>✕</button>
           </header>
           <div class="modal__content">
-            <p>Sesiones intensas, enfoque técnico en golpeo y acondicionamiento
-              metabólico.</p>
+            <p>Miguel es monitor de sala y de GAP. Muy cualificado y cercano, se asegura de que cada persona entrene con seguridad, buena técnica y confianza.</p>
           </div>
           <footer class="modal__footer">
             <button class="btn btn--outline" data-close-modal>Cerrar</button>
-            <a class="btn btn--primary" href="#contacto">Reservar con Marcos</a>
+            <a class="btn btn--primary" href="#contacto">Entrenar con Miguel</a>
           </footer>
         </article>
       </dialog>
 
-      <dialog id="modal-elena" class="modal">
-        <article class="modal__card">
-          <header class="modal__header">
-            <h3>Elena — Movilidad & Core</h3><button class="modal__close"
-              aria-label="Cerrar" data-close-modal>✕</button>
+      <!-- Instalaciones / Galería -->
+      <section id="instalaciones" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Instalaciones</h2>
           </header>
-          <div class="modal__content">
-            <p>Movilidad, prevención de lesiones y fortalecimiento del core para
-              el día a día.</p>
-          </div>
-          <footer class="modal__footer">
-            <button class="btn btn--outline" data-close-modal>Cerrar</button>
-            <a class="btn btn--primary" href="#contacto">Quiero mejorar mi
-              movilidad</a>
-          </footer>
-        </article>
-      </dialog>
+          <p class="subhead">Sala de pesas, zona funcional, box, cardio y estiramientos.</p>
 
-      <script src="app.js" defer></script>
-      <script>
-    // año dinámico sin romper tu app.js
-    document.addEventListener('DOMContentLoaded', () => {
-      const y = document.getElementById('year');
-      if (y) y.textContent = new Date().getFullYear();
-    });
-  </script>
-    </body>
-  </html>
+          <div class="gallery" aria-label="Galería de instalaciones">
+            <figure class="gallery__item reveal"><img loading="lazy" decoding="async" src="images/instalaciones1.png" alt="Sala de musculación" /></figure>
+            <figure class="gallery__item reveal"><img loading="lazy" decoding="async" src="images/instalaciones2.png" alt="Zona de cardio" /></figure>
+            <figure class="gallery__item reveal"><img loading="lazy" decoding="async" src="images/instalaciones3.png" alt="Zona funcional" /></figure>
+            <figure class="gallery__item reveal"><img loading="lazy" decoding="async" src="images/instalaciones4.png" alt="Box y sacos" /></figure>
+            <figure class="gallery__item reveal"><img loading="lazy" decoding="async" src="images/instalaciones5.png" alt="Área de estiramientos" /></figure>
+            <figure class="gallery__item reveal"><img loading="lazy" decoding="async" src="images/instalaciones6.png" alt="Sala de clases colectivas" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section id="opiniones" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Resultados reales</h2>
+          </header>
+          <p class="subhead">Opiniones de Google · Fénix Gym</p>
+
+          <div class="reviews" aria-roledescription="carrusel">
+            <button class="reviews__btn reviews__btn--prev" aria-label="Anterior">‹</button>
+
+            <ul class="reviews__track" role="list">
+              <!-- Cada item es una captura de una reseña -->
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r1.png" alt="Reseña de Google 1 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r2.png" alt="Reseña de Google 2 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r3.png" alt="Reseña de Google 3 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r4.png" alt="Reseña de Google 4 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r5.png" alt="Reseña de Google 5 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r6.png" alt="Reseña de Google 6 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r7.png" alt="Reseña de Google 7 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r8.png" alt="Reseña de Google 8 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+              <li class="reviews__slide">
+                <figure class="reviews__figure"><img src="images/reviews/r9.png" alt="Reseña de Google 9 sobre Fénix Gym" loading="lazy" decoding="async" /></figure>
+              </li>
+            </ul>
+
+            <button class="reviews__btn reviews__btn--next" aria-label="Siguiente">›</button>
+            <div class="reviews__dots" aria-label="Indicadores"></div>
+            <p class="muted center" style="margin-top:.8rem">Fuente: <a href="https://www.google.com/search?q=F%C3%A9nix%20Gym%20Rese%C3%B1as#lkt=LocalPoiReviews" target="_blank" rel="noopener">Google Reviews</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRECIOS / PLANES -->
+      <section id="precios" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Planes sin letra pequeña</h2>
+          </header>
+          <p class="subhead">Elige tu plan y empieza hoy.</p>
+
+          <div class="pricing">
+            <!-- DESTACADO 1: Día gratis -->
+            <article class="price price--highlight reveal">
+              <div class="badge badge--accent">¡Prueba gratis!</div>
+              <h3>Prueba tu 1er día GRATIS</h3>
+              <p class="price__num"><sup>€</sup>GRATIS<span>/día</span></p>
+              <ul class="price__list">
+                <li>Si nunca te has apuntado, ven a probar sin coste.</li>
+              </ul>
+              <a href="#contacto" class="btn btn--primary">Quiero mi día gratis</a>
+            </article>
+
+            <!-- Day Pass -->
+            <article class="price reveal">
+              <h3>Day Pass</h3>
+              <p class="price__num"><sup>€</sup>3<span>/día</span></p>
+              <ul class="price__list">
+                <li>Acceso total 1 día</li>
+                <li>Acceso a clases</li>
+                <li>Sin matrícula</li>
+              </ul>
+              <a href="#contacto" class="btn btn--outline">Lo quiero</a>
+            </article>
+
+            <!-- DESTACADO 2: Mensual -->
+            <article class="price price--featured reveal">
+              <div class="badge">Más popular</div>
+              <h3>Mensual</h3>
+              <p class="price__num"><sup>€</sup>35<span>/mes</span></p>
+              <ul class="price__list">
+                <li>Acceso ilimitado</li>
+                <li>Todas las clases</li>
+                <li>Sin permanencia</li>
+              </ul>
+              <a href="#contacto" class="btn btn--primary">Apuntarme</a>
+            </article>
+
+            <!-- Bimestral -->
+            <article class="price reveal">
+              <h3>Bimestral</h3>
+              <p class="price__num"><sup>€</sup>60<span>/2 meses</span></p>
+              <p class="saving">≈ 30 €/mes · <strong>~14% ahorro</strong></p>
+              <ul class="price__list">
+                <li>Locker incluido</li>
+                <li>Invita a 1 amigo/mes</li>
+              </ul>
+              <a href="#contacto" class="btn btn--outline">Lo quiero</a>
+            </article>
+
+            <!-- Trimestral -->
+            <article class="price reveal">
+              <h3>Trimestral</h3>
+              <p class="price__num"><sup>€</sup>90<span>/3 meses</span></p>
+              <p class="saving">≈ 30 €/mes · <strong>~14% ahorro</strong></p>
+              <ul class="price__list">
+                <li>Locker incluido</li>
+                <li>Invita a 1 amigo/mes</li>
+              </ul>
+              <a href="#contacto" class="btn btn--outline">Lo quiero</a>
+            </article>
+
+            <!-- Anual -->
+            <article class="price reveal">
+              <h3>Anual</h3>
+              <p class="price__num"><sup>€</sup>336<span>/12 meses</span></p>
+              <p class="saving">≈ 28 €/mes · <strong>~20% ahorro</strong></p>
+              <ul class="price__list">
+                <li>Locker incluido</li>
+                <li>Invita a 1 amigo/mes</li>
+              </ul>
+              <a href="#contacto" class="btn btn--outline">Lo quiero</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Redes Sociales -->
+      <section class="section section--cta">
+        <div class="container cta-final">
+          <h2 class="h2 gradient-text">Lleva Fénix Gym en tu bolsillo</h2>
+          <p class="subhead">Estate al tanto de novedades, horarios y el ambiente del gym en nuestras redes sociales.</p>
+          <div class="cta" style="justify-content:center">
+            <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--xl btn--instagram">Síguenos en Instagram</a>
+            <a href="#faq" class="btn btn--ghost btn--xl">Preguntas frecuentes</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">FAQ</h2>
+          </header>
+          <p class="subhead">Todo claro antes de empezar.</p>
+
+          <div class="accordion" role="tablist">
+            <details class="accordion__item reveal">
+              <summary role="tab" aria-controls="f1">¿Hay matrícula o permanencia?</summary>
+              <div id="f1" role="tabpanel"><p>No. Puedes darte de alta y baja cuando quieras.</p></div>
+            </details>
+            <details class="accordion__item reveal">
+              <summary role="tab" aria-controls="f2">¿Las clases van incluidas?</summary>
+              <div id="f2" role="tabpanel"><p>Sí, según aforo y plan contratado.</p></div>
+            </details>
+            <details class="accordion__item reveal">
+              <summary role="tab" aria-controls="f3">¿Puedo probar un día?</summary>
+              <div id="f3" role="tabpanel"><p>Sí, con nuestro Day Pass de 5€.</p></div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="h2">Contacta</h2>
+          </header>
+          <p class="subhead">Te respondemos rápido. <strong>Tel/WhatsApp: <a href="tel:+34614266599">+34 614 26 65 99</a></strong></p>
+
+          <form class="form reveal" data-validate>
+            <div class="form__row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="tucorreo@dominio.com" required />
+            </div>
+            <div class="form__row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu objetivo: perder peso, ganar masa, etc." required></textarea>
+            </div>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Enviar</button>
+              <p class="form__status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <!-- Mapa -->
+          <div class="card reveal" style="margin-top:1rem;padding:0;overflow:hidden;">
+            <iframe title="Mapa Fénix Gym Bormujos" style="width:100%;height:360px;border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.6996672746478!2d-6.069626285721335!3d37.37344994445832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd121334e6e6ee75%3A0xab0a2192627ec53!2sF%C3%A9nix%20Gym!5e0!3m2!1ses!2sus!4v1759388415930!5m2!1ses!2sus"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__col">
+          <a class="brand brand--sm" href="#inicio">FÉNIX GYM</a>
+          <p class="muted">Tu gimnasio de confianza en Bormujos. Sin matrícula ni permanencia.</p>
+        </div>
+        <nav class="footer__col" aria-label="Legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Navegación">
+          <h4>Mapa</h4>
+          <ul>
+            <li><a href="#clases">Clases</a></li>
+            <li><a href="#horario">Horario</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+          </ul>
+        </nav>
+        <div class="footer__col">
+          <h4>Newsletter</h4>
+          <form class="newsletter" data-validate>
+            <input type="email" name="news" placeholder="Tu email" required aria-label="Email para newsletter" />
+            <button class="btn btn--outline" type="submit">Suscribirme</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <small>© <span id="year"></span> Fénix Gym Bormujos. Todos los derechos reservados.</small>
+        <a class="back-to-top" href="#inicio">↑ Volver arriba</a>
+      </div>
+    </footer>
+
+    <!-- Modales extra -->
+    <dialog id="modal-lucia" class="modal">
+      <article class="modal__card">
+        <header class="modal__header">
+          <h3>Lucía — Fuerza & Técnica</h3>
+          <button class="modal__close" aria-label="Cerrar" data-close-modal>✕</button>
+        </header>
+        <div class="modal__content">
+          <p>Especialista en fuerza y técnica de levantamientos. Planes personalizados y mejora postural.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--outline" data-close-modal>Cerrar</button>
+          <a class="btn btn--primary" href="#contacto">Quiero entrenar con Lucía</a>
+        </footer>
+      </article>
+    </dialog>
+
+    <dialog id="modal-marcos" class="modal">
+      <article class="modal__card">
+        <header class="modal__header">
+          <h3>Marcos — HIIT & Box</h3>
+          <button class="modal__close" aria-label="Cerrar" data-close-modal>✕</button>
+        </header>
+        <div class="modal__content">
+          <p>Sesiones intensas, enfoque técnico en golpeo y acondicionamiento metabólico.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--outline" data-close-modal>Cerrar</button>
+          <a class="btn btn--primary" href="#contacto">Reservar con Marcos</a>
+        </footer>
+      </article>
+    </dialog>
+
+    <dialog id="modal-elena" class="modal">
+      <article class="modal__card">
+        <header class="modal__header">
+          <h3>Elena — Movilidad & Core</h3>
+          <button class="modal__close" aria-label="Cerrar" data-close-modal>✕</button>
+        </header>
+        <div class="modal__content">
+          <p>Movilidad, prevención de lesiones y fortalecimiento del core para el día a día.</p>
+        </div>
+        <footer class="modal__footer">
+          <button class="btn btn--outline" data-close-modal>Cerrar</button>
+          <a class="btn btn--primary" href="#contacto">Quiero mejorar mi movilidad</a>
+        </footer>
+      </article>
+    </dialog>
+
+    <script src="app.js" defer></script>
+    <script>
+      // Año dinámico sin romper tu app.js
+      document.addEventListener('DOMContentLoaded', () => {
+        const y = document.getElementById('year');
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>
