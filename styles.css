@@ -492,3 +492,25 @@ margin:.9rem auto clamp(1.2rem, 2.6vw, 2rem);
 
 /* Si lo quieres totalmente circular: */
 .brand__logo{ border-radius:50%; }
+
+/* =====================================================
+INSTALACIONES — agrandar tiles y mejor responsivo
+===================================================== */
+/* Haz los ítems más grandes por defecto (desktop/tablet) */
+#instalaciones .gallery{
+gap: clamp(14px, 2.2vw, 22px);
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+#instalaciones .gallery__item{ aspect-ratio: 4 / 3; border-radius: 18px }
+
+
+/* Tablet */
+@media (max-width: 980px){
+#instalaciones .gallery{ grid-template-columns: repeat(2, minmax(0,1fr)) }
+}
+/* Móviles pequeños: 1 por fila para que se vean grandes */
+@media (max-width: 520px){
+#instalaciones .gallery{ grid-template-columns: 1fr }
+}
+/* Un pelín más ancho que el container normal en esta sección */
+#instalaciones .container{ width: min(1200px, 96vw) }
